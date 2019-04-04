@@ -1,0 +1,54 @@
+
+.container {
+    display: block;
+
+}
+.frame {
+    display: grid;
+    grid-template-columns: 1520px;
+    grid-template-rows: 90px 2px 90px 2px 750px 467px;
+    grid-template-areas:
+      'heder-search'
+      'separator'
+      'statistic'
+      'separator1'
+      'statistic-cards'
+      'graphics'
+      ;
+    grid-gap: 0px;
+  
+    .heder-search {
+      grid-area: heder-search;
+    }
+    
+    .separator{
+        grid-area: separator;
+        width: 1520px;
+        border-top:1px solid #e7e7e7; 
+        border-bottom:1px solid #e7e7e7; 
+    }
+
+    .separator1{
+        grid-area: separator1;
+        width: 1520px;
+        border-top:1px solid #e7e7e7; 
+        border-bottom:1px solid #e7e7e7; 
+    }
+
+    .statistic{
+        grid-area: statistic;
+        background-color: #fafafa;
+    }
+
+    .statistic-cards {
+        grid-area: statistic-cards; 
+        background-color: #fafafa;
+    }
+
+    .graphics {
+        grid-area: graphics;
+        background-color: #fafafa;
+    }
+
+  }
+  
