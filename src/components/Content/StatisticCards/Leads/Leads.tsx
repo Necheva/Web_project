@@ -4,7 +4,7 @@ import { observer } from 'mobx-react';
 import styles from '@src/components/Content/StatisticCards/Leads/Leads.scss';
 
 @observer
-class Content extends React.Component {
+class Leads extends React.Component {
     render() {
         return(
             <div className={styles.container}>
@@ -21,4 +21,4 @@ class Content extends React.Component {
     }
 }
 
-export default Content;
+export default Leads;
