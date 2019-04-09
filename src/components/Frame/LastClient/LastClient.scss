@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.image {
+    padding-top: 25px;
+    padding-left: 55px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #7d7d7d;
+}
+
+.text {
+    display: flex;
+    padding-top: 25px;
+    padding-left: 55px;
+    font-weight: 500;
+    color: #7d7d7d;
+}
+
+a {
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+}
+
+a:hover {
+    color: #b99b39; 
+   
+}
+
+.button {
+    border: none;
+    padding: 15px 55px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .button1 {
+    background-color: #fafafa; 
+    color: #7d7d7d;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 2px solid #7d7d7d;
+    border-radius: 50px 50px 50px 50px;
+    font-weight: 500;
+  }

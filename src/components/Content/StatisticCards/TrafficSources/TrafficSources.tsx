@@ -1,6 +1,6 @@
 import React from 'react';
 import { observer } from 'mobx-react';
-import { PieChart, Pie, Cell } from 'recharts';
+import { PieChart, Pie, Cell, Tooltip } from 'recharts';
 
 import styles from '@src/components/Content/StatisticCards/TrafficSources/TrafficSources.scss';
 
@@ -59,6 +59,7 @@ class TrafficSources extends React.Component {
                             this.data.map((entry, index) => <Cell key={'raceGroupsChart' + index} fill={this.COLORS[index % this.COLORS.length]}/>)
                         }
                         </Pie>
+                        <Tooltip />
                     </PieChart>
                 </div>
                     <div className={styles.wrapperColumn}>
@@ -68,14 +69,14 @@ class TrafficSources extends React.Component {
                                     className={styles.dot}
                                     style= {{backgroundColor: colors.Mail}}
                                 />
-                                    {`${'Mail  85.7%'}`}
+                                <div className={styles.textColor}> {`${'Mail  85.7%'}`}</div>                                  
                             </div>
                             <div className={styles.textRow}>
                                 <div 
                                     className={styles.dot}
                                     style= {{backgroundColor: colors.Site}}
                                 />
-                                    {`${'Site 14.9%'}`}
+                                <div className={styles.textColor}> {`${'Site 14.9%'}`}</div>                
                             </div>
                         </div>
                         <div className={styles.wrapperRow}>
@@ -84,14 +85,14 @@ class TrafficSources extends React.Component {
                                     className={styles.dot}
                                     style= {{backgroundColor: colors.Phone}}
                                 />
-                                    {`${'Phone 9%'}`}
+                                <div className={styles.textColor}>{`${'Phone 9%'}`}</div>           
                             </div>
                             <div className={styles.textRow}>
                                 <div 
                                     className={styles.dot}
                                     style= {{backgroundColor: colors.API}}
                                 />
-                                    {`${'API 11.9%'}`}
+                                <div className={styles.textColor}>{`${'API 11.9%'}`}</div>      
                             </div>
                         </div>
                     </div>

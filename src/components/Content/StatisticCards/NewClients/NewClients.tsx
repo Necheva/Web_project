@@ -10,7 +10,7 @@ class NewClients extends React.Component {
             <div className={styles.container}>
                 <div className={styles.headers}>
                  <div>
-                    <img src={require('./human.JPG')} width={25} height={25} />
+                    <img src={require('./user-alt-solid.svg')} width={25} height={25} />
                  </div>
                  <div className={styles.textColor}>+12%</div>
                 </div>

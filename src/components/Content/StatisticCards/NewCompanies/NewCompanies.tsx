@@ -10,7 +10,7 @@ class NewCompanies extends React.Component {
             <div className={styles.container}>
                 <div className={styles.headers}>
                  <div>
-                    <img src={require('./Capture.JPG')} width={25} height={25} />
+                    <img src={require('./building-regular.svg')} width={25} height={25} />
                  </div>
                  <div className={styles.textColor}>+5%</div>
                 </div>

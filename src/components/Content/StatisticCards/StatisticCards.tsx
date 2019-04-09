@@ -8,6 +8,11 @@ import NewClients from '@src/components/Content/StatisticCards/NewClients/NewCli
 import NewCompanies from '@src/components/Content/StatisticCards/NewCompanies/NewCompanies';
 import Task from '@src/components/Content/StatisticCards/Task/Task';
 import TrafficSources from '@src/components/Content/StatisticCards/TrafficSources/TrafficSources';
+import CompletedToDo from '@src/components/Content/StatisticCards/CompletedToDo/CompletedToDo';
+import LeadsNoToDo from '@src/components/Content/StatisticCards/LeadsNoToDo/LeadsNoToDo';
+import Email from '@src/components/Content/StatisticCards/Email/Email';
+import Cals from '@src/components/Content/StatisticCards/Cals/Cals';
+import SequentialSchedule from '@src/components/Content/StatisticCards/SequentialSchedule/SequentialSchedule';
 
 @observer
 class StatisticCards extends React.Component {
@@ -29,11 +34,21 @@ class StatisticCards extends React.Component {
                     <Card className={styles.trafficSources}>
                         <TrafficSources/>
                     </Card>
-                    <Card className={styles.completedToDo}/>
-                    <Card className={styles.leadsNoToDo}/>
-                    <Card className={styles.email}/>
-                    <Card className={styles.cals}/>
-                    <Card className={styles.sequentialSchedule}/>
+                    <Card className={styles.completedToDo}>
+                        <CompletedToDo/>
+                    </Card>
+                    <Card className={styles.leadsNoToDo}>
+                        <LeadsNoToDo/>
+                    </Card>
+                    <Card className={styles.email}>
+                        <Email/>
+                    </Card>
+                    <Card className={styles.cals}>
+                        <Cals/>
+                    </Card>
+                    <Card className={styles.sequentialSchedule}>
+                        <SequentialSchedule/>
+                    </Card>
                     
             </div>
         );
