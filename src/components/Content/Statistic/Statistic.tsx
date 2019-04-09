@@ -25,7 +25,7 @@ class Statistic extends React.Component {
                         <div className={styles.boxData}>
                             <div className={styles.insideWrapper}>
                                 <img src={require('./calendar-day-solid.svg')} width={25} height={25} />
-                                <div className={styles.text}>24 Mar - 23 April 2019</div>
+                                <div className={styles.boxText}>24 Mar - 23 April 2019</div>
                             </div>
                         </div>
                 </div>

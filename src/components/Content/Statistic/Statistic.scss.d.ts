@@ -8,4 +8,5 @@ export const box4: string;
 export const box5: string;
 export const boxData: string;
 export const text: string;
+export const boxText: string;
 export const image: string;
